@@ -12,7 +12,7 @@
         }
         table, th, td {
             border: 1px solid black;
-            border-collapse:collapse;
+            border-collapse: collapse;
             text-align: center;
             padding: 10px;
         }
@@ -38,27 +38,26 @@
         </tr>
         <tr>
             <td>16:30 - 17:20</td>
-            <td>Diseño de interfaces web</td>
-            <td>Diseño de interfaces web</td>
-            <td>Despliegue de aplicaciones web</td>
-            <td>Despliegue de aplicaciones web</td>
+            <td colspan="2">Diseño de interfaces web</td>
+           
+            <td colspan="2">Despliegue de aplicaciones web</td>
+          
             <td>Diseño de interfaces web</td>
         </tr>
         <tr>
             <td>17:20 - 18:10</td>
-            <td>Diseño de interfaces web</td>
-            <td>Diseño de interfaces web</td>
-            <td>Despliegue de aplicaciones web</td>
-            <td>Despliegue de aplicaciones web</td>
+            <td colspan="2">Diseño de interfaces web</td>
+        
+            <td colspan="2">Despliegue de aplicaciones web</td>
+ 
             <td>Diseño de interfaces web</td>
         </tr>
         <tr>
             <td>18:10 - 19:00</td>
             <td>Diseño de interfaces web</td>
             <td>Empresa e iniciativa emprendedora</td>
-            <td>Desarrollo web entorno cliente</td>
-            <td>Desarrollo web entorno cliente</td>
-            <td>Desarrollo web entorno cliente</td>
+            <td colspan="3">Desarrollo web entorno cliente</td>
+            
         </tr>
         <tr class="recreo">
             <td>19:00 - 19:15</td>
@@ -67,25 +66,19 @@
         <tr>
             <td>19:15 - 20:05</td>
             <td>Despliegue de aplicaciones web</td>
-            <td>Desarrollo web entorno cliente</td>
-            <td>Desarrollo web entorno cliente</td>
-            <td>Desarrollo web entorno cliente</td>
-            <td>Desarrollo web entorno cliente</td>
+            <td colspan="4">Desarrollo web entorno cliente</td>
+            
         </tr>
         <tr>
             <td>20:05 - 20:55</td>
-            <td>Desarrollo web entorno servidor</td>
-            <td>Desarrollo web entorno servidor</td>
-            <td>Desarrollo web entorno servidor</td>
-            <td>Desarrollo web entorno servidor</td>
+            <td colspan="4">Desarrollo web entorno servidor</td>
+           
             <td>Empresa e iniciativa emprendedora</td>
         </tr>
         <tr>
             <td>20:55 - 21:45</td>
-            <td>Desarrollo web entorno servidor</td>
-            <td>Desarrollo web entorno servidor</td>
-            <td>Desarrollo web entorno servidor</td>
-            <td>Desarrollo web entorno servidor</td>
+            <td colspan="4">Desarrollo web entorno servidor</td>
+           
             <td>Empresa e iniciativa emprendedora</td>
         </tr>
     </table>
