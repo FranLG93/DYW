@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horario</title>
+    <style>
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        table, th, td {
+            border: 1px solid black;
+            border-collapse:collapse;
+            text-align: center;
+            padding: 10px;
+        }
+
+        th {
+            background-color: #d0d0d0;
+        }
+        .recreo {
+            background-color: #f57cdf;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <table>
+        <tr>
+            <th>Horas</th>
+            <th>Lunes</th>
+            <th>Martes</th>
+            <th>Miercoles</th>
+            <th>Jueves</th>
+            <th>Viernes</th>
+        </tr>
+        <tr>
+            <td>16:30 - 17:20</td>
+            <td>Diseño de interfaces web</td>
+            <td>Diseño de interfaces web</td>
+            <td>Despliegue de aplicaciones web</td>
+            <td>Despliegue de aplicaciones web</td>
+            <td>Diseño de interfaces web</td>
+        </tr>
+        <tr>
+            <td>17:20 - 18:10</td>
+            <td>Diseño de interfaces web</td>
+            <td>Diseño de interfaces web</td>
+            <td>Despliegue de aplicaciones web</td>
+            <td>Despliegue de aplicaciones web</td>
+            <td>Diseño de interfaces web</td>
+        </tr>
+        <tr>
+            <td>18:10 - 19:00</td>
+            <td>Diseño de interfaces web</td>
+            <td>Empresa e iniciativa emprendedora</td>
+            <td>Desarrollo web entorno cliente</td>
+            <td>Desarrollo web entorno cliente</td>
+            <td>Desarrollo web entorno cliente</td>
+        </tr>
+        <tr class="recreo">
+            <td>19:00 - 19:15</td>
+            <td colspan="5">RECREO</td>
+        </tr>
+        <tr>
+            <td>19:15 - 20:05</td>
+            <td>Despliegue de aplicaciones web</td>
+            <td>Desarrollo web entorno cliente</td>
+            <td>Desarrollo web entorno cliente</td>
+            <td>Desarrollo web entorno cliente</td>
+            <td>Desarrollo web entorno cliente</td>
+        </tr>
+        <tr>
+            <td>20:05 - 20:55</td>
+            <td>Desarrollo web entorno servidor</td>
+            <td>Desarrollo web entorno servidor</td>
+            <td>Desarrollo web entorno servidor</td>
+            <td>Desarrollo web entorno servidor</td>
+            <td>Empresa e iniciativa emprendedora</td>
+        </tr>
+        <tr>
+            <td>20:55 - 21:45</td>
+            <td>Desarrollo web entorno servidor</td>
+            <td>Desarrollo web entorno servidor</td>
+            <td>Desarrollo web entorno servidor</td>
+            <td>Desarrollo web entorno servidor</td>
+            <td>Empresa e iniciativa emprendedora</td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
