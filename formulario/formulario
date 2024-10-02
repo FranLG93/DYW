@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+       body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+
+form {
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: white;
+}
+
+fieldset {
+    border: 2px solid #ccc;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 10px;
+    background-color: #e0e0e0;
+    border: 1px solid #ccc;
+}
+
+label {
+    display: inline-block;
+    width: 150px;
+    margin-top: 10px;
+}
+
+input[type="text"],
+select {
+    padding: 5px;
+    margin-top: 10px;
+    width: calc(100% - 160px);
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #7e7e7e;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+.personal {
+    background-color: rgb(137, 94, 137);
+}
+.acceso {
+    background-color: rgb(85, 126, 167);
+}
+.documentos {
+    background-color: rgb(96, 134, 94);
+}
+
+    </style>
+
+</head>
+<body>
+        <h1>INFORMACION DE ACCESO A LOS CICLOS DE GRADO SUPERIOR</h1>
+        <br>
+        <br>
+        
+        <fieldset class="personal">
+            <legend>Datos Personales</legend>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre">
+
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos">
+
+            <label for="dni">DNI:</label>
+            <input type="text" id="dni" name="dni">
+
+            <label for="lugarNacimiento">Lugar de Nacimiento:</label>
+            <input type="text" id="lugarNacimiento" name="lugarNacimiento">
+
+            <label for="provincia">Provincia:</label>
+            <select id="provincia" name="provincia">
+                <option value="Cáceres">Cáceres</option>
+           
+            </select>
+
+            <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+            <input type="text" id="fechaNacimiento" name="fechaNacimiento" placeholder="dd/mm/aaaa">
+
+            <label for="direccion">Direccion:</label>
+            <input type="text" id="direccion" name="direccion">
+
+            <label for="codigoPostal">Codigo Postal:</label>
+            <input type="text" id="codigoPostal" name="codigoPostal">
+        </fieldset>
+
+        <fieldset class="acceso">
+            <legend>Forma de Acceso</legend>
+            <label><input type="radio" name="acceso" value="directo"> Directo</label><br>
+            
+            <label><input type="radio" name="acceso" value="bachillerato"> Bachillerato</label>
+            <input type="text" name="bachillerato"><br>
+
+            <label><input type="radio" name="acceso" value="universidad"> Universidad</label><br>
+            
+            <label><input type="radio" name="acceso" value="gradoMedio"> Grado Medio</label><br>
+            
+            <label><input type="radio" name="acceso" value="otros"> Otros (especifique)</label>
+            <input type="text" name="otros"><br>
+
+            <label><input type="radio" name="acceso" value="pruebaLibre"> Prueba Libre</label>
+        </fieldset>
+
+        <fieldset class="documentos">
+            <legend>Documentos Adjuntados</legend>
+            <label><input type="checkbox" name="fotocopiaDNI"> Fotocopia DNI</label><br>
+            
+            <label><input type="checkbox" name="certificadoAcademico"> Certificado Academico</label><br>
+            
+            <label><input type="checkbox" name="otrosDocumentos"> Otros documentos (especifique)</label>
+            <input type="text" name="otrosDocumentos">
+        </fieldset>
+
+        <button type="submit">Enviar Solicitud</button>
+    </form>
+</body>
+</html>
