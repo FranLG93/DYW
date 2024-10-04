@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Pasaje</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        label {
+            font-family:arial, sans-serif;
+            font-size: large;
+        }
+
+        .forma1 {
+            margin-bottom: 15px;
+        }
+
+        input[type="texto"] {
+            padding: 5px;
+            width: 200px;
+            font-size: 14px;
+        }
+
+        select {
+            padding: 5px;
+            font-size: 14px;
+            width: 100%;
+        }
+
+        input[type="submit"] {
+            padding: 5px 15px;
+            font-size: 14px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="/submit-pasaje" method="POST">
+        <div class="forma1">
+            <label for="usuario">Usuario</label>
+            <br>
+            <input type="texto" id="usuario" name="usuario" placeholder="Nombre del viajero" required>
+        </div>
+
+        <div class="forma1">
+            <label for="tipo-pasaje">Tipo de pasaje</label>
+            <select id="tipo-pasaje" name="tipo-pasaje" required>
+                <option value="vip">Vip</option>
+                <option value="especial">Especial</option>
+                <option value="primera">Primera</option>
+                <option value="segunda">Segunda</option>
+            </select>
+        </div>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+</body>
+</html>
