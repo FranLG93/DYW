@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra de Pasajes de Barco</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+
+        .ticketcontainer {
+            background-color: #fff;
+            padding: 30px;
+            width: 350px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        .container2 {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        input[type="text"],
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            font-size: 14px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            font-size: 16px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="ticketcontainer">
+        <h2>Compra de billetes </h2>
+        <form action="/comprar-pasaje" method="POST">
+            <div class="form-group">
+                <label for="nombre">Nombre del Pasajero</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="container2">
+                <label for="clase">Clase del Pasaje</label>
+                <select id="clase" name="clase" required>
+                    <option value="1">Bussiness</option>
+                    <option value="2">Primera</option>
+                    <option value="3">Segunda</option>
+                </select>
+            </div>
+            <input type="submit" value="Comprar billetes">
+        </form>
+    </div>
+</body>
+</html>
