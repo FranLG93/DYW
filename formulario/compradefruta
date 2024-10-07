@@ -56,7 +56,7 @@
 
   
         <label for="cantidad">Cantidad:</label>
-        <input type="texto" id="cantidad" name="cantidad" placeholder="numero unidad (Ej: 2 kg)" pattern="^\d+ (ud|kg|gr)$" title="Ingrese un número seguido de 'ud', 'kg' o 'gr'" required>
+        <input type="texto" id="cantidad" name="cantidad" placeholder="numero unidad (2 kg)" pattern="^\d+ (ud|kg|gr)$" title="Ingrese un numero seguido de 'ud', 'kg' o 'gr'" required>
 
        
         <button type="submit">Enviar</button>
