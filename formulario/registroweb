@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+     
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 10px;
+            display: block;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0 20px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 10px;
+            margin-top: 20px;
+            border: none;
+            cursor: pointer;
+        }
+         
+  
+
+    </style>
+</head>
+<body>
+    <form action="" method="POST">
+        <h1>Registro de Usuario</h1>
+
+      
+        <label for="alias">Alias:</label>
+        <input type="text" id="alias" name="alias" placeholder="Ingrese su alias" required>
+
+       
+        <label for="email">Correo electronico:</label>
+        <input type="email" id="email" name="email" placeholder="Ingrese su correo electrónico" required>
+
+       
+        <label for="telefono">Telefono:</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="Ingrese su número de teléfono" required>
+
+        
+        <input type="hidden" id="tipo_usuario" name="tipo_usuario" value="usuario-nuevo">
+
+      
+        <div>
+            <button type="submit">Registrarse</button>
+            <button type="reset">Restablecer</button>
+        </div>
+    </form>
+</body>
+</html>
