@@ -1,1 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .forma1 {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: white;
+        
+        }
+        
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 10px;
+            color: #555;
+        }
+        input[type="texto"], input[type="email"] {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+       
+        .opcion {
+            margin-bottom: 20px;
+        }
+        .opcion {
+            margin-bottom: 20px;
+        }
+        button {
+            background-color: #484848;
+            color: white;
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            border: none;
+            cursor: pointer;
+        }
+       
+    </style>
+</head>
+<body>
+
+<div class="forma1">
+    <h1>Formulario de registro</h1>
+    <form action="" method="post">
+      
+        <label for="nombre">Nombre (obligatorio, max. 20 caracteres):</label>
+        <input type="texto" id="nombre" name="nombre" maxlength="20" required>
+
+    
+        <label for="apellidos">Apellidos (obligatorio, max. 20 caracteres):</label>
+        <input type="texto" id="apellidos" name="apellidos" maxlength="20" required>
+
+        <label>Sexo:</label>
+        <div class="opcion">
+            <input type="radio" id="hombre" name="sexo" value="hombre" required>
+            <label for="hombre">Hombre</label>
+
+            <input type="radio" id="mujer" name="sexo" value="mujer" required>
+            <label for="mujer">Mujer</label>
+        </div>
+
+        <label for="email">Correo Electrónico (obligatorio):</label>
+        <input type="email" id="email" name="email" required>
+
+        
+        <div class="checkbox-options">
+            <input type="checkbox" id="novedades" name="novedades" checked>
+            <label for="novedades">Deseo recibir información sobre novedades y ofertas</label>
+        </div>
+
+        <div class="checkbox-options">
+            <input type="checkbox" id="condiciones" name="condiciones" required>
+            <label for="condiciones">Acepto las condiciones generales del sitio sobre protección de datos</label>
+        </div>
+
+        
+        <button type="submit">Enviar</button>
+    </form>
+</div>
+
+</body>
+</html>
 
