@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra de Vino</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+     
+        select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0 20px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            
+        }
+
+        button {
+            background-color: #910f0f;
+            color: white;
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            border: none;
+            cursor: pointer;
+        }
+         
+
+    </style>
+</head>
+<body>
+    <form action="" method="GET">
+        <h1>Compra de Vino</h1>
+        <label for="botellas">Número de botellas (en lotes de 3):</label>
+        <select id="botellas" name="botellas" required>
+            <option value="3">3</option>
+            <option value="6">6</option>
+            <option value="9">9</option>
+            <option value="12">12</option>
+            <option value="15">15</option>
+        </select>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
