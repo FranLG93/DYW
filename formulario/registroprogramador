@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Programador</title>
+    <style>
+            body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+        width: 60%;
+        padding: 20px;
+        border: 1px solid #000000;
+        background-color: white;
+        }
+
+
+        label {
+            font-weight: bold;
+            margin-bottom: 10px;
+            display: block;
+            color: #333;
+        }
+
+        input[type="texto"], input[type="email"], input[type="tel"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0 20px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        fieldset {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        legend {
+            font-weight: bold;
+        }
+        button {
+            background-color: #484848;
+            color: white;
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            border: none;
+            cursor: pointer;
+        }
+         
+        
+    </style>
+</head>
+<body>
+
+    
+    <form action="" method="POST">
+        <h1>Registro de Programador </h1>
+
+        <label for="nombre">Nombre:</label>
+        <input type="texto" id="nombre" name="nombre" placeholder="nombre" required>
+
+      
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="mail" required>
+
+        
+        <label for="telefono">Telefono:</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="Su telefono">
+
+        
+        <fieldset>
+            <legend>Lenguajes que conoces</legend>
+
+            <input type="checkbox" id="javascript" name="lenguajes[]" value="javascript">
+            <label for="javascript">Javascript</label><br>
+
+            <input type="checkbox" id="php" name="lenguajes[]" value="php">
+            <label for="php">PHP</label><br>
+
+            <input type="checkbox" id="nodejs" name="lenguajes[]" value="nodejs">
+            <label for="nodejs">NodeJS</label><br>
+
+            <input type="checkbox" id="python" name="lenguajes[]" value="python">
+            <label for="python">Python</label>
+        </fieldset>
+
+       
+        <label for="ingles">Nivel de ingles:</label>
+        <select id="ingles" name="ingles" required>
+            <option value="bajo">Bajo</option>
+            <option value="medio">Medio</option>
+            <option value="alto">Alto</option>
+        </select>
+     
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
