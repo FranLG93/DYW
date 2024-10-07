@@ -14,13 +14,6 @@
     background-color: #f4f4f4;
 }
 
-form {
-    width: 60%;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    background-color: white;
-}
 
 fieldset {
     border: 2px solid #ccc;
