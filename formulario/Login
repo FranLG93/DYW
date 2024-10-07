@@ -35,7 +35,7 @@
 </head>
 <body>
 
-    <form action="/submit-login" method="POST">
+    <form action="" method="POST">
         <div class="form-group">
             <label for="usuario">Usuario</label>
             <input type="text" id="usuario" name="usuario" required placeholder="Nombre de usuario">
