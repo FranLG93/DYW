@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva de Pista - Club de Deportes</title>
+    <style>
+       body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+    
+        .forma1 {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: white;
+        
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+        width: 60%;
+        padding: 20px;
+        border: none;
+        background-color: white;
+        }
+        label {
+            margin-bottom: 10px;
+            color: #555;
+        }
+        input[type="texto"], input[type="email"], input[type="dia"] {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 100%;
+        }
+        select {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 100%;
+        }
+        input[type="checkbox"], input[type="radio"] {
+            margin-right: 10px;
+        }
+        .datos {
+            margin-bottom: 20px;
+            font-weight: bold;
+            font-size: 18px;
+            color: #39b077;
+        }
+   
+        button {
+            background-color: #484848;
+            color: white;
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            border: none;
+            cursor: pointer;
+        }
+       
+    </style>
+</head>
+<body>
+
+<div class="forma1">
+    <h1>Formulario de Reserva de Pista</h1>
+    <form action="" method="post">
+        
+       
+        <div class="forma1">
+            <div class="datos">Datos Personales</div>
+
+           
+            <label for="nombre">Nombre (obligatorio, solo letras, empieza con mayúscula):</label>
+            <input type="texto" id="nombre" name="nombre" pattern="[A-Z][a-z]+" title="Debe comenzar con mayúscula y solo contener letras" required>
+
+          
+            <label for="apellido">Apellido (obligatorio, solo letras, empieza con mayúscula):</label>
+            <input type="texto" id="apellido" name="apellido" pattern="[A-Z][a-z]+" title="Debe comenzar con mayúscula y solo contener letras" required>
+
+            
+            <label>¿Es miembro del club?</label>
+            <div>
+                <input type="radio" id="miembro-si" name="miembro" value="si" checked>
+                <label for="miembro-si">Sí</label>
+
+                <input type="radio" id="miembro-no" name="miembro" value="no">
+                <label for="miembro-no">No</label>
+            </div>
+
+           
+            <label for="email">Correo Electrónico (obligatorio):</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+      
+        <div class="forma1">
+            <div class="datos">Datos de la Reserva</div>
+
+          
+            <label for="deporte">Deporte:</label>
+            <select id="deporte" name="deporte" required>
+                <option value="paddle">Paddle</option>
+                <option value="squash">Squash</option>
+                <option value="tenis">Tenis</option>
+            </select>
+
+        
+            <label for="fecha">Fecha y Hora de la Reserva:</label>
+            <input type="dia" id="fecha" name="fecha" required>
+
+         
+            <div>
+                <input type="checkbox" id="acepto-normas" name="acepto-normas" required>
+                <label for="acepto-normas">Acepto las normas del club</label>
+            </div>
+        </div>
+
+        <button type="submit">Contactar</button>
+    </form>
+</div>
+
+</body>
+</html>
