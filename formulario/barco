@@ -41,7 +41,7 @@
 </head>
 <body>
 
-    <form action="/submit-pasaje" method="POST">
+    <form action="" method="POST">
         <div class="forma1">
             <label for="usuario">Usuario</label>
             <br>
