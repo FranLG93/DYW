@@ -41,7 +41,7 @@
 </head>
 <body>
 
-    <form action="/submit-form" method="POST">
+    <form action="" method="POST">
         <div class="forma1">
             <label for="articulo">Articulo</label>
             <input type="texto" id="articulo" name="articulo" placeholder="Articulo">
