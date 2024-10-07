@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra de Frutas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        form {
+        width: 60%;
+        padding: 20px;
+        border: 1px solid #000000;
+        background-color: white;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+ select, input[type="texto"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0 20px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+         padding: 10px 20px;
+         cursor: pointer;
+}
+
+    </style>
+</head>
+<body>
+    <form action="" method="GET">
+        <h1>Compra de Frutas</h1>
+
+       
+        <label for="fruta">Fruta:</label>
+        <select id="fruta" name="fruta" required>
+            <option value="manzanas">Manzanas</option>
+            <option value="naranjas">Naranjas</option>
+            <option value="mandarinas">Mandarinas</option>
+        </select>
+
+  
+        <label for="cantidad">Cantidad:</label>
+        <input type="texto" id="cantidad" name="cantidad" placeholder="numero unidad (Ej: 2 kg)" pattern="^\d+ (ud|kg|gr)$" title="Ingrese un número seguido de 'ud', 'kg' o 'gr'" required>
+
+       
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
