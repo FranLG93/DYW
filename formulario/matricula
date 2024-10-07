@@ -37,7 +37,7 @@
 
 <div class="forma1">
     <h2>Materias</h2>
-    <form action="/submit-form" method="post">
+    <form action="" method="post">
         <label for="registros">Número de matricula:</label>
         <input type="texto" id="registros" name="registros" required>
 
