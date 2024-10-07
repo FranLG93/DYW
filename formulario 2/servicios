@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Servicio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .forma1 {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: white;
+        
+        
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+      
+        form {
+        width: 60%;
+        padding: 20px;
+        border: none;
+        background-color: white;
+        }
+        label {
+            margin-bottom: 10px;
+            color: #555;
+        }
+        input[type="texto"], input[type="email"], input[type="number"], input[type="Contraseña"] {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 100%;
+        }
+        input[type="checkbox"], input[type="radio"] {
+            margin-right: 10px;
+        }
+        .opciones {
+            margin-bottom: 20px;
+        }
+        select {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 100%;
+        }
+        button {
+            background-color: #484848;
+            color: white;
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            border: none;
+            cursor: pointer;
+        }
+       
+    </style>
+</head>
+<body>
+
+<div class="forma1">
+    <h1>Formulario de Servicio</h1>
+    <form action="" method="post">
+        
+        <label for="nombre">Nombre (obligatorio, max. 40 caracteres):</label>
+        <input type="texto" id="nombre" name="nombre" maxlength="40" required>
+
+       
+        <label for="apellidos">Apellidos (obligatorio, max. 60 caracteres):</label>
+        <input type="texto" id="apellidos" name="apellidos" maxlength="60" required>
+
+       
+        <label for="edad">Edad (entre 18 y 90):</label>
+        <input type="number" id="edad" name="edad" min="18" max="90">
+
+       
+        <label for="email">Correo Electronico (obligatorio):</label>
+        <input type="email" id="email" name="email" required>
+
+        
+        <label for="Contraseña">Contraseña (obligatorio):</label>
+        <input type="Contraseña" id="Contraseña" name="Contraseña" required>
+
+     
+        <label>Genero (obligatorio):</label>
+        <div class="opciones">
+            <input type="radio" id="hombre" name="genero" value="hombre" required>
+            <label for="hombre">Hombre</label>
+
+            <input type="radio" id="mujer" name="genero" value="mujer" required>
+            <label for="mujer">Mujer</label>
+
+            <input type="radio" id="otro" name="genero" value="otro" required>
+            <label for="otro">Otro</label>
+        </div>
+
+        <label>Dispositivos:</label>
+        <div class="opciones">
+            <input type="checkbox" id="macbook" name="dispositivos[]" value="macbook">
+            <label for="macbook">Macbook</label>
+
+            <input type="checkbox" id="iphone" name="dispositivos[]" value="iphone">
+            <label for="iphone">iPhone</label>
+
+            <input type="checkbox" id="ipad" name="dispositivos[]" value="ipad">
+            <label for="ipad">iPad</label>
+        </div>
+
+        
+        <label for="conociste">¿Cómo nos conociste?</label>
+        <select id="conociste" name="conociste">
+            <option value="buscador" selected>Buscador</option>
+            <option value="red_social">Red Social</option>
+            <option value="amigos">Amigos</option>
+            <option value="otros">Otros</option>
+        </select>
+
+     
+        <div>
+            <input type="checkbox" id="suscripcion" name="suscripcion">
+            <label for="suscripcion">Deseo subscribirme a la lista de correo</label>
+        </div>
+
+    
+        <button type="submit">Contactar</button>
+    </form>
+</div>
+
+</body>
+</html>
