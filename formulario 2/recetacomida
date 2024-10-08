@@ -21,7 +21,7 @@
             border: 1px solid #ccc;
             border-radius: 5px;
         }
-        .submit-btn {
+        .submitbutton {
             background-color: #484848;
             color: white;
             width: 100%;
@@ -55,7 +55,7 @@
         <input type="file" id="imagen-receta" name="imagen_receta" accept="imagen/*" required>
 
    
-        <input type="submit" value="Enviar Receta" class="submit-btn">
+        <input type="submit" value="Enviar Receta" class="submitbutton">
     </form>
 </div>
 
