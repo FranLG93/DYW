@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enviar Receta</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .forma1 {
+            max-width: 400px;
+            padding: 20px;
+
+        }
+      
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .submit-btn {
+            background-color: #484848;
+            color: white;
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+     
+    </style>
+</head>
+<body>
+
+<div class="forma1">
+    <form action="" method="POST" enctype="multipart/form-data">
+        <h1>Enviar Receta</h1>
+        
+        <label for="nombre-receta">Nombre de la receta (máximo 80 caracteres):</label>
+        <input type="texto" id="nombre-receta" name="nombre_receta" maxlength="80" required>
+
+     
+        <label for="tipo-receta">Tipo de receta:</label>
+        <select id="tipo-receta" name="tipo_receta" required>
+            <option value="">Seleccione el tipo de receta</option>
+            <option value="carne">Carne</option>
+            <option value="pescado">Pescado</option>
+            <option value="fruta">Fruta</option>
+        </select>
+
+       
+        <label for="imagen-receta">Imagen de la receta:</label>
+        <input type="file" id="imagen-receta" name="imagen_receta" accept="imagen/*" required>
+
+   
+        <input type="submit" value="Enviar Receta" class="submit-btn">
+    </form>
+</div>
+
+</body>
+</html>
