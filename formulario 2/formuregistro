@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .forma1{
+            max-width: 400px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .checkbox {
+            margin-bottom: 15px;
+            background-image: linear-gradient(to right, #d6d6d6, #d6d6d6);
+            text-align: center;
+        }
+        button {
+            background-color: #484848;
+            color: white;
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+    
+    </style>
+</head>
+<body>
+
+<div class="forma1">
+    <h1>Formulario de Registro</h1>
+    <form action="" method="POST">
+       
+        <label for="nombre">Nombre:</label>
+        <input type="texto" id="nombre" name="nombre" required>
+
+      
+        <label for="apellidos">Apellidos:</label>
+        <input type="texto" id="apellidos" name="apellidos" required>
+
+       
+        <label for="telefono">Teléfono (formato xxx xx xx xx):</label>
+        <input type="tel" id="telefono" name="telefono" pattern="[0-9]{3} [0-9]{2} [0-9]{2} [0-9]{2}" required>
+
+       
+        <label for="contraseña">Contraseña (mínimo 8 caracteres):</label>
+        <input type="contraseña" id="contraseña" name="contraseña" minlength="8" required>
+
+    
+        <label for="interes">Sitios de interes:</label>
+        <select id="interes" name="interes[]" multiple required>
+            <option value="programacion">Programacion</option>
+            <option value="diseno">Diseño</option>
+            <option value="ciencias">Ciencias</option>
+        </select>
+
+        
+        <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
+        <input type="date" id="fecha-nacimiento" name="fecha_nacimiento" required>
+
+      
+        <div class="checkbox">
+           <label for="acepto">Acepto los terminos de proteccion de datos</label>
+           <input type="checkbox" id="acepto" name="acepto" required>
+        </div>
+
+       
+        <button type="submit">Crear Cuenta</button>
+    </form>
+</div>
+
+</body>
+</html>
