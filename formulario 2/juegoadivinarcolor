@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Adivinar el Color</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .forma1 {
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        label, select, input {
+            font-size: 18px;
+            width: 100%;
+        }
+        .submitbutton {
+            background-color: #484848;
+            color: white;
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+      
+    </style>
+</head>
+<body>
+
+<h2>Adivina el Color</h2>
+
+<div class="forma1">
+    <form action="procesar.php" method="GET">
+       
+        <label for="color">Selecciona un color:</label>
+        <select id="color" name="color" required>
+            <option value="azul">Azul</option>
+            <option value="verde">Verde</option>
+            <option value="rojo">Rojo</option>
+            <option value="naranja">Naranja</option>
+            <option value="rosa">Rosa</option>
+            <option value="marron">Marron</option>
+        </select>
+
+    
+        <input type="submit" value="Enviar" class="submitbutton">
+    </form>
+
+
+
+</body>
+</html>
