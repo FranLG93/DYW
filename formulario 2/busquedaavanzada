@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busqueda Avanzada</title>
+    <style>
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input[type="texto"], input[type="numero"], select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        button {
+            background-color: #484848;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Formulario de Búsqueda Avanzada</h2>
+
+    <form action="" method="GET">
+     
+        <div class="forma1">
+            <label for="palabraclave">Palabra clave:</label>
+            <input type="texto" id="palabraclave" name="palabraclave" placeholder="Buscar..." required>
+        </div>
+
+       
+        <div class="forma1">
+            <label for="categoria">Categoria:</label>
+            <select id="categoria" name="categoria">
+                <option value="todas">Todas</option>
+                <option value="electronica">Electronica</option>
+                <option value="ropa">Ropa</option>
+                <option value="hogar">Hogar</option>
+            </select>
+        </div>
+
+        
+        <div class="form-group">
+            <label for="precioMinimo">Precio minimo:</label>
+            <input type="number" id="preciominimo" name="preciominimo" placeholder="Ej. 100" min="0">
+        </div>
+
+        
+        <div class="forma1>
+            <label for="preciomaximo">Precio maximo:</label>
+            <input type="numero" id="preciomaximo" name="preciomaximo" placeholder="Ej. 1000" min="0">
+        </div>
+
+       
+        <div class="forma1">
+            <label for="ordenarPor">Ordenar por:</label>
+            <select id="ordenarPor" name="ordenarPor">
+                <option value="relevancia">Relevancia</option>
+                <option value="precio">Precio</option>
+            </select>
+        </div>
+
+
+        <div class="forma1">
+            <button type="submit">Buscar</button>
+        </div>
+    </form>
+
+</body>
+</html>
