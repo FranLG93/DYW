@@ -6,3 +6,7 @@ h1{
     color: rgb(255, 255, 255);
     margin-left: 30px;
 }
+
+p {
+    color: rgb(255, 0, 0);
+}
