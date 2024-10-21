@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tamaños de fuente</title>
+</head>
+<body>
+	<h1>Tamaños de fuente</h1>
+	<p style="font-size: 16px;">Párrafo de 16px</p>
+    <!-- /* Establece el tamaño de la fuente en 16 píxeles. Los píxeles son una unidad de medida que se utiliza comúnmente en la web para definir el tamaño de los elementos.*/ -->
+
+	<p style="font-size: 12px;">Párrafo de 12px</p>
+    <!-- /* Establece el tamaño de la fuente en 12 píxeles.*/ -->
+
+	<p style="font-size: 1em;">Párrafo de 1em</p>
+<!-- /*Establece el tamaño de la fuente en 1 em. Un em es una unidad de medida que se basa en el tamaño de la fuente del elemento padre. En este caso, si el elemento padre tiene un tamaño de fuente de 16 píxeles, el tamaño de la fuente de este párrafo será de 16 píxeles también.*/ -->
+
+	<p style="font-size: 1.5em;">Párrafo de 1.5em</p>
+<!-- /* Establece el tamaño de la fuente en 1.5 em. Esto significa que el tamaño de la fuente será 1.5 veces el tamaño de la fuente del elemento padre.*/ -->
+
+	<p style="font-size: 0.5in;">Párrafo de 0.5 pulgadas</p>
+<!-- 
+    /*Establece el tamaño de la fuente en 0.5 pulgadas. Las pulgadas son una unidad de medida que se utiliza comúnmente en la impresión.*/ -->
+
+
+	<p style="font-size: 8mm;">Párrafo de 8 milímetros</p>
+<!-- /* Establece el tamaño de la fuente en 8 milímetros. Los milímetros son una unidad de medida que se utiliza comúnmente en la impresión.*/ -->
+
+	<p style="font-size: 12pt;">Párrafo de 12 puntos</p>
+
+    <!-- /*Establece el tamaño de la fuente en 12 puntos. Los puntos son una unidad de medida que se utiliza comúnmente en la impresión.*/ -->
+</body>
+</html>
