@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparacion de estilos</title>
+    <style>
+        /* Clase que usa el nombre de color estandar */
+        .a { background-color: red; }
+
+        /* Clase para rojo puro */
+        .b { background-color: #FF0000; }
+
+        /* Clase que usa el valor RGB para rojo puro */
+        .c { background-color: RGB(255, 0, 0); }
+
+        /* Clase que usa el valor HSL para rojo puro */
+        .d { background-color: HSL(0, 100%, 50%); }
+
+        /* Clase que usa el nombre de color con opacidad */
+        .e { background-color: red; opacity: 0.5; }
+
+        /* Clase que usa el valor RGBA para rojo con opacidad */
+        .f { background-color: rgba(255, 0, 0, 0.5); }
+
+        /* General para ver las diferencias visuales */
+        div {
+            width: 200px;
+            height: 100px;
+            margin: 10px;
+            color: white;
+            text-align: center;
+     
+        }
+    </style>
+</head>
+<body>
+    <div class="a">Clase A</div>
+    <div class="b">Clase B</div>
+    <div class="c">Clase C</div>
+    <div class="d">Clase D</div>
+    <div class="e">Clase E</div>
+    <div class="f">Clase F</div>
+</body>
+</html>
