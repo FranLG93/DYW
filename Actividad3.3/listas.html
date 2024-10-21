@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propiedades de las Listas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            text-align: center;
+        }
+        .lista-desordenada {
+            list-style-type: disc; /* Estilo de marcador: puntos */
+            padding-left: 20px; /* Espaciado a la izquierda */
+        }
+        .lista-desordenada-inside {
+            list-style-type: square; /* Estilo de marcador: cuadrados */
+            list-style-position: inside; /* Marcador dentro del contenedor */
+            padding-left: 0; /* Sin espaciado a la izquierda */
+        }
+        .lista-ordenada {
+            list-style-type: decimal; /* Estilo de marcador: números */
+            padding-left: 20px; /* Espaciado a la izquierda */
+        }
+        .lista-definicion {
+            list-style-type: none; /* Sin estilo de marcador */
+            margin: 0; /* Sin margen */
+            padding: 0; /* Sin padding */
+        }
+        .lista-definicion dt {
+            font-weight: bold; /* Negrita para términos */
+        }
+        .lista-definicion dd {
+            margin-left: 20px; /* Espaciado para definiciones */
+        }
+    </style>
+</head>
+<body>
+    <h1>Ejemplo de Propiedades de las Listas</h1>
+    
+    <h2>Lista Desordenada</h2>
+    <ul class="lista-desordenada">
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+    </ul>
+    
+    <h2>Lista Desordenada con Marcadores dentro</h2>
+    <ul class="lista-desordenada-inside">
+        <li>Elemento A</li>
+        <li>Elemento B</li>
+        <li>Elemento C</li>
+    </ul>
+    
+    <h2>Lista Ordenada</h2>
+    <ol class="lista-ordenada">
+        <li>Primero</li>
+        <li>Segundo</li>
+        <li>Tercero</li>
+    </ol>
+    
+    <h2>Lista de Definición</h2>
+    <dl class="lista-definicion">
+        <dt>Término 1</dt>
+        <dd>Definición del término 1.</dd>
+        <dt>Término 2</dt>
+        <dd>Definición del término 2.</dd>
+    </dl>
+</body>
+</html>
